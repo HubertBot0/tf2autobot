@@ -1,0 +1,49 @@
+{
+    "apps": [
+        {
+            "name": "tf2autobot",
+            "script": "dist/app.js",
+            "exec_mode": "fork",
+            "shutdown_with_message": false,
+            "max_memory_restart": "1500M",
+            "kill_retry_time": 30000,
+            "kill_timeout": 60000,
+            "out_file": "NULL",
+            "error_file": "NULL",
+            "env": {
+                "NODE_ENV": "production",
+
+                "STEAM_ACCOUNT_NAME": "pandowskitrade",
+                "STEAM_PASSWORD": "Stefania$1908",
+                "STEAM_SHARED_SECRET": "LuDhVmY51vV2WpF5u5s9tH/zYf8=",
+                "STEAM_IDENTITY_SECRET": "ge7LlGy4HsSXqrYkSvzU/lSqGPw=",
+
+                "BPTF_ACCESS_TOKEN": "S/CMUMhdW7Na8fTX1V05ml2MDyRrsh7P8tvJVLcPzp8=",
+                "BPTF_API_KEY": "60d0cee0b3e9827cd26b2c4e",
+
+                "ADMINS": ["<76561198398341467>","<76561198398341467>"],
+                "KEEP": ["<steamid of person to keep in friendslist>"],
+                "ITEM_STATS_WHITELIST": [],
+                "GROUPS": ["103582791469033930"],
+                "ALERTS": ["trade", "version"],
+
+                "ENABLE_SOCKET": true,
+                "CUSTOM_PRICER_URL": "",
+                "CUSTOM_PRICER_API_TOKEN": "",
+
+                "SKIP_BPTF_TRADEOFFERURL": true,
+                "SKIP_UPDATE_PROFILE_SETTINGS": true,
+
+                "TIMEZONE": "Europe/Warsaw",
+                "CUSTOM_TIME_FORMAT": "MMMM Do YYYY, HH:mm:ss ZZ",
+                "TIME_ADDITIONAL_NOTES": "",
+
+                "DEBUG": true,
+                "DEBUG_FILE": true,
+
+                "ENABLE_HTTP_API": false,
+                "HTTP_API_PORT": 3001
+            }
+        }
+    ]
+}
